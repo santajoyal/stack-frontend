@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useFormik } from "formik";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { login } from "./api/user";
 import { config } from "./Config";
 
@@ -93,12 +93,7 @@ function Login() {
                         </div>
                         <input type={"submit"} className="btn btn-primary btn-user btn-block" value={"Login"} />
                         <hr />
-                        <a
-                          href="index.html"
-                          class="btn btn-facebook btn-user btn-block"
-                        >
-                          Register
-                        </a>
+                        <Link to={"/register"} className="btn btn-primary btn-user btn-block">Register</Link>
                       </form>
                       <hr />
                       <div class="text-center">

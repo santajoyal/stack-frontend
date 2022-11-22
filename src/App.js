@@ -11,12 +11,14 @@ import Listqns from './Listqns';
 import Createquestion from './Createquestion';
 import Createanswer from './Createanswer';
 import Listanswers from './Listanswers';
+import Register from './Register';
 
 function App() {
   return (
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<Login/>}/>
+    <Route path="/register" element={<Register/>}/>
     <Route path='/portal' element={<Portal/>}>
       <Route path='list-quires' element={<Listqns/>}/>
       <Route path='create-questions' element={<Createquestion/>}/>
